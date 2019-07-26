@@ -7,9 +7,11 @@ def nyc_pigeon_organizer(data)
         if !pigeon_list[pigeon]
           pigeon_list[pigeon] =
           {color: [], gender: [], lives: []}
-        else
+        end
+        if
           pigeon_list[pigeon][attribute] << detail2.to_s
         end
+      end
       end
     end
   end
